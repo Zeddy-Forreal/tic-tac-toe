@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Tic-Tac-Toe | play with your friend</title>
+<link rel="stylesheet" href="style/main.css">
+<link rel="icon" href="static/icon.png">
+</head>
+<body>
+
+<div class="wrapper">
+
+  <header class="header">
+    <h1>Tic Tac Toe</h1>
+    <p>Two players · One board · No mercy</p>
+  </header>
+
+  <div class="scoreboard">
+    <div class="player-card" id="PlayerX" data-active="true">
+      
+      <span class="player-label">Player <strong>X</strong></span>
+      <span class="player-score" id="scoreX">0</span>
+    </div>
+    <div class="vs">VS</div>
+    <div class="player-card" id="PlayerO" data-active="false">
+      
+      <span class="player-label">Player <strong>O</strong></span>
+      <span class="player-score" id="scoreO">0</span>
+    </div>
+  </div>
+
+  <div class="turn-bar x-turn" id="turnBar">
+    <span class="turn-dot"></span>
+    <span id="turnText">Player X's turn</span>
+  </div>
+
+    <div class="actions">
+    <button class="btn btn-primary" id="resetBtn">↺ &nbsp;New Round</button>
+    <button class="btn btn-ghost" id="fullResetBtn">Reset Scores</button>
+  </div>
+
+  <section class="board" id="board">
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+  </section>
+
+
+
+</div>
+
+<script src="script/main.js">
+
+</script>
+</body>
+</html>
